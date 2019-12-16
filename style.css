@@ -1,0 +1,322 @@
+body {
+    max-width: 1366px;
+    margin: auto;
+    box-shadow: 0 0 2px black;
+
+}
+
+/* -------- Хэдер и 1 раздел We Design... -------- */
+.laptop {
+    background-image: url("pic/background-laptop.jpg");
+    padding: 0 98px;
+}
+
+/* -------- Хэдер -------- */
+header {
+    height:100px; /*высота хэдера */
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    font: 12px "Montserrat", sans-serif;
+    font-weight: 900;
+}
+header div {
+    padding-left:30px;
+}
+header div:first-child {
+    padding-left: 0;
+}
+header div:nth-child(2) {
+    margin-left: auto;
+}
+header a {
+    text-decoration: none;
+    color:black;
+}
+header a:hover {
+    color: #10c9c3;
+}
+
+/* -------- 1 раздеол We design -------- */
+.laptop section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.laptop section div {
+    padding-left: 52%;
+
+}
+.laptop .heading {
+    font: 38px "Montserrat", serif;
+    font-weight: 900;
+    padding-top: 130px;
+}
+.laptop .paragraph {
+    font: 18px "Nunito Sans", sans-serif;
+    color: #787878;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+.laptop .knopka {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+.laptop input {
+    padding: 15px 40px;
+    color: #ffffff;
+    background-color: #10c9c3;
+    border: none;
+    font: 12px "Montserrat", serif;
+}
+
+/* -------- Раздел About -------- */
+.about {
+    text-align: center;
+    vertical-align: middle;
+    padding: 100px 98px;
+}
+.about h1 {
+    text-align: center;
+    vertical-align: middle;
+    font: 30px "Montserrat", sans-serif;
+    padding: 0 25%;
+}
+.about p {
+    font: 18px "Nunito Sans", sans-serif;
+    padding: 0 25%;
+    color: #787878;
+}
+
+/* -------- Раздел skills -------- */
+.skills {
+    display:flex;
+    padding: 120px 98px;
+    font: 30px "Montserrat", sans-serif;
+    background-image: url("pic/skills.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-color: #f8f9f9;
+}
+.skills div {
+    width: 50%;
+    vertical-align: middle;
+}
+.skills dt {
+  font-size: 12px;
+    padding-bottom: 15px;
+}
+.skills2 dd {
+    margin: 0;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    background-color: #e8e8e8;
+}
+.skills-level {
+    text-align: center;
+    color: #ffffff;
+    background-color: #10c9c3;
+    height: 4px;
+}
+
+/* -------- Раздел результаты -------- */
+.results {
+    background-color: #10c9c3;
+    padding: 100px 98px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font: 12px "Montserrat", sans-serif;
+    color: white;
+    align-items: center;
+}
+.results img {
+    filter: invert();
+    width: 50px;
+    height: auto;
+}
+.results .number {
+    font-size: 18px;
+    padding: 0;
+}
+.results div:nth-child(2n) {
+    padding-right: 100px;
+}
+
+/* -------- Раздел с работой-------- */
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.work img {
+    width:100%;
+    height: auto;
+}
+.work div {
+    width:25%;
+    text-align: center;
+    vertical-align: middle;
+}
+.work div:hover {
+    filter: brightness(0.3);
+}
+
+/* -------- Раздел LOAD MORE WORK-------- */
+.grow {
+    height:50px;
+    color: #8e8e8e;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding-top: 40px;
+    font: 12px "Montserrat", sans-serif;
+}
+.grow a {
+    text-decoration: none;
+    color:#8e8e8e;
+}
+.grow a:hover {
+    color: #10c9c3;
+}
+
+/* -------- Раздел с видео-------- */
+.video {
+    padding: 50px 98px;
+    text-align: center;
+}
+.video h1 {
+    font: 30px "Montserrat", sans-serif;
+}
+.video p {
+    color: #787878;
+    font: 16px "Nunito Sans", sans-serif;
+    padding: 0 330px;
+}
+.video iframe {
+    padding-top: 20px;
+}
+
+/* -------- Раздел с activity-------- */
+.activity {
+    padding: 50px 98px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.activityBlock {
+    text-align: center;
+    width: 20%;
+    padding-bottom: 40px;
+    padding-right: 10px;
+}
+.activity img {
+    width: 50px;
+    height: 50px;
+    padding-bottom: 5px;
+}
+.activityName {
+    text-transform: uppercase;
+    font: 12px "Montserrat", sans-serif;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.activityDes {
+    font: 16px "Nunito Sans", sans-serif;
+    color: #787878;
+}
+
+/* -------- Раздел с цитатами-------- */
+.quotes {
+    background-color: #10c9c3;
+    color: white;
+    text-align: center;
+    padding: 180px 240px 1px 240px;
+
+}
+.quote {
+    font: 24px "Montserrat", sans-serif;
+    padding-bottom: 40px;
+}
+.author {
+    font: 12px "Montserrat", sans-serif;
+    padding-bottom: 100px;
+}
+.checkboxs {
+    padding-bottom: 50px;
+}
+
+/* -------- Раздел с партнерами-------- */
+.partners {
+    padding: 65px 98px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.partners div {
+    filter: grayscale(100%);
+}
+.partners div:hover {
+    filter:none;
+}
+
+/* -------- Раздел с фидбэком-------- */
+.feedback {
+    background-color: #f5f5f5;
+    padding: 100px 300px;
+    text-align: center;
+}
+.feedback h1 {
+    font: 30px "Montserrat", sans-serif;
+}
+.feedback p, form {
+    font: 16px "Nunito Sans", sans-serif;
+}
+.firstField {
+    width: 315px;
+    height:50px;
+    margin-bottom: 25px;
+    border: none;
+    padding-left:10px;
+}
+.firstField:first-child{
+    margin-right: 20px;
+}
+.secondField {
+    width: 670px;
+    height:50px;
+    margin-bottom: 25px;
+    border: none;
+    padding-left:10px;
+}
+.feedback textarea {
+    border: none;
+    margin-bottom: 25px;
+    width: 670px;
+    height:200px;
+    padding-left:10px;
+    resize: none;
+}
+.feedback input[type=submit] {
+    padding: 15px 40px;
+    color: #ffffff;
+    background-color: #10c9c3;
+    border: none;
+}
+
+/* -------- Футер-------- */
+footer {
+    background-color: black;
+    padding: 70px 98px;
+    color:#bcbcbc;
+    display: flex;
+    justify-content: space-between;
+    font: 16px "Nunito Sans", sans-serif;
+
+}
+footer a {
+    text-decoration: none;
+    color:#bcbcbc;
+}
