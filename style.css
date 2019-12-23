@@ -1,32 +1,31 @@
 body {
-    max-width: 1366px;
-    margin: auto;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", serif;
 }
 
 /* -------- Хэдер и 1 раздел We Design... -------- */
 .laptop {
-    background: url("pic/background-laptop.jpg") 0 0 no-repeat, linear-gradient(to top, #aeb7be, #d7dadf);
+    background: url("pic/background-laptop.jpg") bottom left 0 no-repeat, linear-gradient(to top, #aeb7be, #d7dadf);
     padding: 0 98px;
 }
 
 /* -------- Хэдер -------- */
 header {
-    height: 100px; /*высота хэдера */
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     font-size: 12px;
-    font-weight: 900;
+    font-weight: 700;
+    max-width: 1366px;
+    margin: auto;
 }
 
 header div {
-    margin-left: 40px;
+    margin: 30px 0 0 60px;
 }
 
 header div:first-child {
-    padding-left: 0;
+    margin-left: 0;
 }
 
 header div:nth-child(2) {
@@ -46,6 +45,8 @@ header a:hover {
 .laptop section {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1366px;
+    margin: auto;
 }
 
 .laptop section div {
@@ -55,14 +56,14 @@ header a:hover {
 
 .laptop .heading {
     font-size: 38px;
-    font-weight: 900;
-    padding-top: 130px;
+    font-weight: 700;
+    margin-top: 130px;
 }
 
 .laptop .description {
-    font: 18px "Nunito Sans", sans-serif;
+    font: 18px "Nunito Sans", serif;
     color: #404040;
-    padding-top: 40px;
+    margin-top: 40px;
     margin-right: 20px;
 }
 
@@ -84,6 +85,8 @@ header a:hover {
     text-align: center;
     vertical-align: middle;
     padding: 100px 98px;
+    max-width: 1366px;
+    margin: auto;
 }
 
 .about h1 {
@@ -100,19 +103,27 @@ header a:hover {
 }
 
 /* -------- Раздел skills -------- */
+.skillsBack {
+    background-color: #f8f9f9;
+}
+
 .skills {
     display: flex;
-    padding: 120px 98px;
     font-size: 18px;
-    background-color: #f8f9f9;
+    max-width: 1366px;
+    margin: auto;
+}
+
+.skillsBlock {
+    width: 50%;
+    vertical-align: middle;
+    padding: 120px 0;
+}
+
+.skillsBlock:nth-child(2) {
     background-image: url("pic/skills.jpg");
     background-position: right top;
     background-repeat: no-repeat;
-}
-
-.skills div {
-    width: 50%;
-    vertical-align: middle;
 }
 
 .skills dt {
@@ -122,7 +133,7 @@ header a:hover {
     font-weight: bold;
 }
 
-.skills2 dd {
+.skillsInterest dd {
     margin: 0;
     margin-bottom: 20px;
     margin-right: 50px;
@@ -137,9 +148,12 @@ header a:hover {
 }
 
 /* -------- Раздел результаты -------- */
-.results {
+.resultsBack {
     background-color: #10c9c3;
-    padding: 50px 98px;
+}
+
+.results {
+    padding: 50px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -147,6 +161,8 @@ header a:hover {
     letter-spacing: 0.1em;
     color: white;
     align-items: center;
+    max-width: 1366px;
+    margin: auto;
 }
 
 .resultsObject {
@@ -174,6 +190,8 @@ header a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1366px;
+    margin: auto;
 }
 
 .workImg {
@@ -186,7 +204,8 @@ header a:hover {
 .eye {
     position: absolute;
     width: 5%;
-    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
 }
 
 .work div {
@@ -195,14 +214,13 @@ header a:hover {
     vertical-align: middle;
 }
 
-.workImg:hover {
+.work div:hover .workImg {
     filter: brightness(0.3);
-    transition: 1s ease-out;
+    transition: 0.3s ease-out;
 }
 
-.workImg:hover ~ .eye {
-    visibility: visible;
-    filter: invert();
+.work div:hover .eye {
+    opacity: 1;
 }
 
 
@@ -222,6 +240,11 @@ header a:hover {
     font-size: 12px;
 }
 
+.grow div {
+    max-width: 1366px;
+    margin: auto;
+}
+
 .grow a {
     text-decoration: none;
     color: #8e8e8e;
@@ -233,18 +256,20 @@ header a:hover {
 
 /* -------- Раздел с видео-------- */
 .video {
-    padding: 50px 98px;
     text-align: center;
+    max-width: 1366px;
+    margin: auto;
 }
 
 .video h1 {
     font-size: 30px;
+    margin-top: 50px;
 }
 
 .video p {
     color: #787878;
     font: 16px "Nunito Sans", sans-serif;
-    padding: 0 330px;
+    margin: 0 25%;
 }
 
 .video iframe {
@@ -252,9 +277,14 @@ header a:hover {
 }
 
 /* -------- Раздел с activity-------- */
-.activity {
-    padding: 50px 98px;
+.activityBack {
     background-color: #f5f5f5;
+}
+
+.activity {
+    max-width: 1366px;
+    margin: auto;
+    padding: 50px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -292,7 +322,7 @@ header a:hover {
     background-color: #10c9c3;
     color: white;
     text-align: center;
-    padding: 180px 240px 1px 240px;
+    padding: 180px 25% 1px 25%;
 
 }
 
@@ -312,11 +342,13 @@ header a:hover {
 
 /* -------- Раздел с партнерами-------- */
 .partners {
-    padding: 65px 98px;
+    padding: 65px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    max-width: 1366px;
+    margin: auto;
 }
 
 .partners img {
@@ -345,11 +377,11 @@ header a:hover {
 }
 
 .feedback p, form {
-    font: 16px "Nunito Sans", sans-serif;
+    font: 16px "Nunito Sans", serif;
 }
 
 .firstField {
-    min-width: 44%;
+    width: 45%;
     height: 50px;
     margin-bottom: 25px;
     border: none;
@@ -361,7 +393,7 @@ header a:hover {
 }
 
 .secondField {
-    min-width: 95%;
+    min-width: 100%;
     height: 50px;
     margin-bottom: 25px;
     border: none;
@@ -371,7 +403,7 @@ header a:hover {
 .feedback textarea {
     border: none;
     margin-bottom: 25px;
-    min-width: 95%;
+    min-width: 100%;
     height: 200px;
     padding-left: 10px;
     padding-top: 10px;
@@ -388,7 +420,12 @@ header a:hover {
 /* -------- Футер-------- */
 footer {
     background-color: black;
-    padding: 70px 98px;
+}
+
+.footer {
+    max-width: 1366px;
+    margin: auto;
+    padding: 70px 0;
     color: #bcbcbc;
     display: flex;
     flex-wrap: wrap;
