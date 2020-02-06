@@ -1,73 +1,83 @@
 body {
-    max-width: 1366px;
-    margin: auto;
-    box-shadow: 0 0 2px black;
-
+    font-family: "Montserrat", serif;
 }
 
 /* -------- Хэдер и 1 раздел We Design... -------- */
 .laptop {
-    background-image: url("pic/background-laptop.jpg");
+    background: url("pic/background-laptop.jpg") bottom left 0 no-repeat, linear-gradient(to top, #aeb7be, #d7dadf);
     padding: 0 98px;
 }
 
 /* -------- Хэдер -------- */
 header {
-    height:100px; /*высота хэдера */
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    font: 12px "Montserrat", sans-serif;
-    font-weight: 900;
+    font-size: 12px;
+    font-weight: 700;
+    max-width: 1366px;
+    margin: auto;
 }
+
 header div {
-    padding-left:30px;
+    margin: 30px 0 0 60px;
 }
+
 header div:first-child {
-    padding-left: 0;
+    margin-left: 0;
 }
+
 header div:nth-child(2) {
     margin-left: auto;
 }
+
 header a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
+
 header a:hover {
     color: #10c9c3;
 }
 
 /* -------- 1 раздеол We design -------- */
-.laptop section{
+.laptop section {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1366px;
+    margin: auto;
 }
+
 .laptop section div {
     padding-left: 52%;
 
 }
+
 .laptop .heading {
-    font: 38px "Montserrat", serif;
-    font-weight: 900;
-    padding-top: 130px;
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: 130px;
 }
-.laptop .paragraph {
-    font: 18px "Nunito Sans", sans-serif;
-    color: #787878;
-    padding-top: 40px;
-    padding-right: 20px;
+
+.laptop .description {
+    font: 18px "Nunito Sans", serif;
+    color: #404040;
+    margin-top: 40px;
+    margin-right: 20px;
 }
-.laptop .knopka {
+
+.laptop .pressbutton {
     padding-top: 40px;
     padding-bottom: 100px;
 }
+
 .laptop input {
     padding: 15px 40px;
     color: #ffffff;
     background-color: #10c9c3;
     border: none;
-    font: 12px "Montserrat", serif;
+    font-size: 12px;
 }
 
 /* -------- Раздел About -------- */
@@ -75,13 +85,17 @@ header a:hover {
     text-align: center;
     vertical-align: middle;
     padding: 100px 98px;
+    max-width: 1366px;
+    margin: auto;
 }
+
 .about h1 {
     text-align: center;
     vertical-align: middle;
-    font: 30px "Montserrat", sans-serif;
+    font-size: 30px;
     padding: 0 25%;
 }
+
 .about p {
     font: 18px "Nunito Sans", sans-serif;
     padding: 0 25%;
@@ -89,30 +103,44 @@ header a:hover {
 }
 
 /* -------- Раздел skills -------- */
+.skillsBack {
+    background-color: #f8f9f9;
+}
+
 .skills {
-    display:flex;
-    padding: 120px 98px;
-    font: 30px "Montserrat", sans-serif;
+    display: flex;
+    font-size: 18px;
+    max-width: 1366px;
+    margin: auto;
+}
+
+.skillsBlock {
+    width: 50%;
+    vertical-align: middle;
+    padding: 120px 0;
+}
+
+.skillsBlock:nth-child(2) {
     background-image: url("pic/skills.jpg");
     background-position: right top;
     background-repeat: no-repeat;
-    background-color: #f8f9f9;
 }
-.skills div {
-    width: 50%;
-    vertical-align: middle;
-}
+
 .skills dt {
-  font-size: 12px;
+    font-size: 12px;
     padding-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
-.skills2 dd {
+
+.skillsInterest dd {
     margin: 0;
     margin-bottom: 20px;
     margin-right: 50px;
     background-color: #e8e8e8;
 }
-.skills-level {
+
+.skillsLevel {
     text-align: center;
     color: #ffffff;
     background-color: #10c9c3;
@@ -120,27 +148,41 @@ header a:hover {
 }
 
 /* -------- Раздел результаты -------- */
-.results {
+.resultsBack {
     background-color: #10c9c3;
-    padding: 100px 98px;
+}
+
+.results {
+    padding: 50px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font: 12px "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.1em;
     color: white;
     align-items: center;
+    max-width: 1366px;
+    margin: auto;
 }
+
+.resultsObject {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
 .results img {
     filter: invert();
     width: 50px;
     height: auto;
 }
+
+.resultsObject div:nth-child(2n) {
+    padding-left: 15px;
+}
+
 .results .number {
     font-size: 18px;
-    padding: 0;
-}
-.results div:nth-child(2n) {
-    padding-right: 100px;
 }
 
 /* -------- Раздел с работой-------- */
@@ -148,81 +190,129 @@ header a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1366px;
+    margin: auto;
 }
-.work img {
-    width:100%;
+
+.workImg {
+    display: block;
+    width: 100%;
     height: auto;
+    transition: 1s ease-out;
 }
+
+.eye {
+    position: absolute;
+    width: 5%;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
 .work div {
-    width:25%;
+    width: 25%;
     text-align: center;
     vertical-align: middle;
 }
-.work div:hover {
+
+.work div:hover .workImg {
     filter: brightness(0.3);
+    transition: 0.3s ease-out;
+}
+
+.work div:hover .eye {
+    opacity: 1;
+}
+
+
+.work a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* -------- Раздел LOAD MORE WORK-------- */
 .grow {
-    height:50px;
+    height: 50px;
     color: #8e8e8e;
     background-color: #f5f5f5;
     text-align: center;
     padding-top: 40px;
-    font: 12px "Montserrat", sans-serif;
+    font-size: 12px;
 }
+
+.grow div {
+    max-width: 1366px;
+    margin: auto;
+}
+
 .grow a {
     text-decoration: none;
-    color:#8e8e8e;
+    color: #8e8e8e;
 }
+
 .grow a:hover {
     color: #10c9c3;
 }
 
 /* -------- Раздел с видео-------- */
 .video {
-    padding: 50px 98px;
     text-align: center;
+    max-width: 1366px;
+    margin: auto;
 }
+
 .video h1 {
-    font: 30px "Montserrat", sans-serif;
+    font-size: 30px;
+    margin-top: 50px;
 }
+
 .video p {
     color: #787878;
     font: 16px "Nunito Sans", sans-serif;
-    padding: 0 330px;
+    margin: 0 25%;
 }
+
 .video iframe {
     padding-top: 20px;
 }
 
 /* -------- Раздел с activity-------- */
-.activity {
-    padding: 50px 98px;
+.activityBack {
     background-color: #f5f5f5;
+}
+
+.activity {
+    max-width: 1366px;
+    margin: auto;
+    padding: 50px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-around;
 }
+
 .activityBlock {
-    text-align: center;
-    width: 20%;
-    padding-bottom: 40px;
+    box-sizing: border-box;
+    width: 25%;
+    margin-bottom: 40px;
     padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
 }
+
 .activity img {
     width: 50px;
     height: 50px;
-    padding-bottom: 5px;
 }
-.activityName {
+
+.activity h5 {
     text-transform: uppercase;
-    font: 12px "Montserrat", sans-serif;
+    font-size: 12px;
     font-weight: bold;
-    padding-bottom: 5px;
+    letter-spacing: 0.1em;
 }
-.activityDes {
+
+.activity p {
     font: 16px "Nunito Sans", sans-serif;
     color: #787878;
 }
@@ -232,73 +322,94 @@ header a:hover {
     background-color: #10c9c3;
     color: white;
     text-align: center;
-    padding: 180px 240px 1px 240px;
+    padding: 180px 25% 1px 25%;
 
 }
+
 .quote {
-    font: 24px "Montserrat", sans-serif;
+    font-size: 24px;
     padding-bottom: 40px;
 }
+
 .author {
-    font: 12px "Montserrat", sans-serif;
+    font-size: 12px;
     padding-bottom: 100px;
 }
-.checkboxs {
+
+.switch {
     padding-bottom: 50px;
 }
 
 /* -------- Раздел с партнерами-------- */
 .partners {
-    padding: 65px 98px;
+    padding: 65px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    max-width: 1366px;
+    margin: auto;
 }
-.partners div {
+
+.partners img {
+    display: block;
+    width: 100%;
+    height: auto;
     filter: grayscale(100%);
+    transition: transform 1s;
 }
-.partners div:hover {
-    filter:none;
+
+.partners img:hover {
+    transition: transform 1s, filter 1s;
+    filter: none;
+    transform: rotate(-10deg);
 }
 
 /* -------- Раздел с фидбэком-------- */
 .feedback {
     background-color: #f5f5f5;
-    padding: 100px 300px;
+    padding: 100px 350px;
     text-align: center;
 }
+
 .feedback h1 {
-    font: 30px "Montserrat", sans-serif;
+    font-size: 30px;
 }
+
 .feedback p, form {
-    font: 16px "Nunito Sans", sans-serif;
+    font: 16px "Nunito Sans", serif;
 }
+
 .firstField {
-    width: 315px;
-    height:50px;
+    width: 45%;
+    height: 50px;
     margin-bottom: 25px;
     border: none;
-    padding-left:10px;
+    padding-left: 10px;
 }
-.firstField:first-child{
-    margin-right: 20px;
+
+.firstField:first-child {
+    margin-right: 5%;
 }
+
 .secondField {
-    width: 670px;
-    height:50px;
+    min-width: 100%;
+    height: 50px;
     margin-bottom: 25px;
     border: none;
-    padding-left:10px;
+    padding-left: 10px;
 }
+
 .feedback textarea {
     border: none;
     margin-bottom: 25px;
-    width: 670px;
-    height:200px;
-    padding-left:10px;
+    min-width: 100%;
+    height: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
     resize: none;
 }
+
 .feedback input[type=submit] {
     padding: 15px 40px;
     color: #ffffff;
@@ -309,14 +420,20 @@ header a:hover {
 /* -------- Футер-------- */
 footer {
     background-color: black;
-    padding: 70px 98px;
-    color:#bcbcbc;
+}
+
+.footer {
+    max-width: 1366px;
+    margin: auto;
+    padding: 70px 0;
+    color: #bcbcbc;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     font: 16px "Nunito Sans", sans-serif;
-
 }
+
 footer a {
     text-decoration: none;
-    color:#bcbcbc;
+    color: #bcbcbc;
 }
